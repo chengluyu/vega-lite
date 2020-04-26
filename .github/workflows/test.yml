@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Install extra dependencies for Node 14
+        run: sudo apt-get install libpango1.0-dev libgif-dev
+        if: matrix.node == 14
+
       - name: Install Node dependencies
         run: yarn --frozen-lockfile
 
