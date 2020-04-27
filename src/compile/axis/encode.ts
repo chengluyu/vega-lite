@@ -22,7 +22,7 @@ export function labels(model: UnitModel, channel: PositionScaleChannel, specifie
       })
     : undefined;
 
-  let labelsSpec: any = {
+  const labelsSpec: any = {
     ...(text ? {text} : {}),
     ...specifiedLabelsSpec
   };
