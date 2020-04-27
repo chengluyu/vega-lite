@@ -101,6 +101,7 @@
       "grid": false,
       "title": "date",
       "tickCount": 8,
+      "format": null,
       "labelFlush": true,
       "labelOverlap": true,
       "encode": {

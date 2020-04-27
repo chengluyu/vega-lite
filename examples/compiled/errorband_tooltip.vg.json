@@ -111,6 +111,7 @@
       "orient": "bottom",
       "grid": false,
       "title": "Year (year)",
+      "format": null,
       "labelFlush": true,
       "labelOverlap": true,
       "tickCount": {"signal": "ceil(width/40)"},

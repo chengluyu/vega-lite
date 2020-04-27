@@ -46,9 +46,7 @@
       "encode": {
         "update": {
           "fill": {"value": "#4c78a8"},
-          "tooltip": {
-            "signal": "{\"a\": isValid(datum[\"a\"]) ? datum[\"a\"] : \"\"+datum[\"a\"], \"b\": format(datum[\"b\"], \"\")}"
-          },
+          "tooltip": {"signal": "{\"a\": undefined, \"b\": undefined}"},
           "x": {"scale": "x", "field": "a"},
           "width": {"scale": "x", "band": 1},
           "y": {"scale": "y", "field": "b"},

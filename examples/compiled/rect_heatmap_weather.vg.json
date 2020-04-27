@@ -94,12 +94,8 @@
       "orient": "bottom",
       "grid": false,
       "title": "Day",
+      "format": "%e",
       "labelAngle": 0,
-      "encode": {
-        "labels": {
-          "update": {"text": {"signal": "timeFormat(datum.value, '%e')"}}
-        }
-      },
       "labelBaseline": "top",
       "labelOverlap": true,
       "zindex": 1
@@ -109,16 +105,10 @@
       "orient": "left",
       "grid": false,
       "title": "Month",
-      "labelOverlap": true,
-      "encode": {
-        "labels": {
-          "update": {
-            "text": {
-              "signal": "timeFormat(datum.value, timeUnitSpecifier([\"month\"], {\"year-month\":\"%b %Y \",\"year-month-date\":\"%b %d, %Y \"}))"
-            }
-          }
-        }
+      "format": {
+        "signal": "timeUnitSpecifier([\"month\"], {\"year-month\":\"%b %Y \",\"year-month-date\":\"%b %d, %Y \"})"
       },
+      "labelOverlap": true,
       "zindex": 1
     }
   ],

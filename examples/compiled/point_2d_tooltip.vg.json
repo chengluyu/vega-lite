@@ -29,7 +29,7 @@
         "update": {
           "opacity": {"value": 0.7},
           "tooltip": {
-            "signal": "{\"Horsepower\": format(datum[\"Horsepower\"], \"\"), \"Miles_per_Gallon\": format(datum[\"Miles_per_Gallon\"], \"\")}"
+            "signal": "{\"Horsepower\": undefined, \"Miles_per_Gallon\": undefined}"
           },
           "fill": {"value": "transparent"},
           "stroke": {"value": "#4c78a8"},

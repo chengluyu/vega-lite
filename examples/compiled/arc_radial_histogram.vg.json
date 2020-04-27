@@ -70,7 +70,7 @@
         "update": {
           "stroke": {"value": "white"},
           "tooltip": {
-            "signal": "{\"IMDB_Rating (binned)\": !isValid(datum[\"bin_maxbins_10_IMDB_Rating\"]) || !isFinite(+datum[\"bin_maxbins_10_IMDB_Rating\"]) ? \"null\" : format(datum[\"bin_maxbins_10_IMDB_Rating\"], \"\") + \" – \" + format(datum[\"bin_maxbins_10_IMDB_Rating_end\"], \"\"), \"Count of Records\": format(datum[\"__count\"], \"\")}"
+            "signal": "{\"IMDB_Rating (binned)\": undefined, \"Count of Records\": undefined}"
           },
           "fill": {"value": "#4c78a8"},
           "x": {"signal": "width", "mult": 0.5},

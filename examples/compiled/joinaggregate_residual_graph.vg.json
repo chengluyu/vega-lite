@@ -109,6 +109,7 @@
       "orient": "bottom",
       "grid": false,
       "title": "Release_Date",
+      "format": null,
       "labelFlush": true,
       "labelOverlap": true,
       "tickCount": {"signal": "ceil(width/40)"},

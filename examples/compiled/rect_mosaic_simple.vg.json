@@ -59,7 +59,7 @@
           "fill": {"scale": "color", "field": "Origin"},
           "opacity": {"scale": "opacity", "field": "Cylinders"},
           "tooltip": {
-            "signal": "{\"Origin\": isValid(datum[\"Origin\"]) ? datum[\"Origin\"] : \"\"+datum[\"Origin\"], \"Cylinders\": format(datum[\"Cylinders\"], \"\")}"
+            "signal": "{\"Origin\": undefined, \"Cylinders\": undefined}"
           },
           "x": {"scale": "x", "field": "x"},
           "x2": {"scale": "x", "field": "x2"},
