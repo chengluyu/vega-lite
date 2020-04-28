@@ -149,7 +149,7 @@
             {"value": 0}
           ],
           "tooltip": {
-            "signal": "{\"AAPL\": undefined, \"AMZN\": undefined, \"GOOG\": undefined, \"IBM\": undefined, \"MSFT\": undefined}"
+            "signal": "{\"AAPL\": format(datum[\"AAPL\"], \"\"), \"AMZN\": format(datum[\"AMZN\"], \"\"), \"GOOG\": format(datum[\"GOOG\"], \"\"), \"IBM\": format(datum[\"IBM\"], \"\"), \"MSFT\": format(datum[\"MSFT\"], \"\")}"
           },
           "x": {"scale": "x", "field": "date"},
           "y": {"value": 0},
@@ -169,7 +169,7 @@
           "stroke": {"value": "transparent"},
           "isVoronoi": {"value": true},
           "tooltip": {
-            "signal": "{\"AAPL\": undefined, \"AMZN\": undefined, \"GOOG\": undefined, \"IBM\": undefined, \"MSFT\": undefined}"
+            "signal": "{\"AAPL\": format(datum.datum[\"AAPL\"], \"\"), \"AMZN\": format(datum.datum[\"AMZN\"], \"\"), \"GOOG\": format(datum.datum[\"GOOG\"], \"\"), \"IBM\": format(datum.datum[\"IBM\"], \"\"), \"MSFT\": format(datum.datum[\"MSFT\"], \"\")}"
           }
         }
       },
