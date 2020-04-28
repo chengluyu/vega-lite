@@ -105,8 +105,9 @@ export function tooltipRefForEncoding(
       }
     }
 
-    tooltipTuples.push({channel, key, value});
     value = value ?? textRef(fieldDef, config, expr).signal;
+
+    tooltipTuples.push({channel, key, value});
   }
 
   forEach(encoding, (channelDef, channel) => {
