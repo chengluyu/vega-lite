@@ -64,6 +64,10 @@
       "encode": {
         "update": {
           "fill": {"scale": "color", "field": "count"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"name\" + \": \" + (isValid(datum[\"name\"]) ? datum[\"name\"] : \"\"+datum[\"name\"]) + \"; \" + \"count\" + \": \" + (format(datum[\"count\"], \"\")) + \"; \" + \"Number of fruit\" + \": \" + (format(datum[\"count\"], \"\"))"
+          },
           "x": {"scale": "x", "field": "count_end"},
           "x2": {"scale": "x", "field": "count_start"},
           "y": {"scale": "y", "field": "name"},
@@ -83,6 +87,9 @@
             {"test": "datum[\"count\"]>10", "value": "white"},
             {"value": "black"}
           ],
+          "description": {
+            "signal": "\"name\" + \": \" + (isValid(datum[\"name\"]) ? datum[\"name\"] : \"\"+datum[\"name\"]) + \"; \" + \"count\" + \": \" + (format(datum[\"count\"], \"\"))"
+          },
           "x": {"scale": "x", "field": "count", "offset": -4},
           "y": {"scale": "y", "field": "name", "band": 0.5},
           "text": {"signal": "format(datum[\"count\"], \"\")"},
@@ -136,6 +143,7 @@
       "tickCount": {"signal": "ceil(width/40)"},
       "domain": false,
       "labels": false,
+      "aria": false,
       "maxExtent": 0,
       "minExtent": 0,
       "ticks": false,

@@ -109,6 +109,10 @@
           "opacity": {"value": 0.7},
           "fill": {"value": "transparent"},
           "stroke": {"value": "#4c78a8"},
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"people\" + \": \" + (format(datum[\"people\"], \"\")) + \"; \" + \"age\" + \": \" + (isValid(datum[\"age\"]) ? datum[\"age\"] : \"\"+datum[\"age\"])"
+          },
           "x": {"scale": "x", "field": "age", "band": 0.5},
           "y": {"scale": "y", "field": "people"}
         }
@@ -123,6 +127,9 @@
         "update": {
           "stroke": {"value": "black"},
           "tooltip": {"signal": "format(datum[\"mean_people\"], \"\")"},
+          "description": {
+            "signal": "\"people\" + \": \" + (format(datum[\"lower_whisker_people\"], \"\")) + \"; \" + \"lower_box_people\" + \": \" + (format(datum[\"lower_box_people\"], \"\")) + \"; \" + \"age\" + \": \" + (isValid(datum[\"age\"]) ? datum[\"age\"] : \"\"+datum[\"age\"]) + \"; \" + \"Mean of people\" + \": \" + (format(datum[\"mean_people\"], \"\"))"
+          },
           "x": {"scale": "x", "field": "age", "band": 0.5},
           "y": {"scale": "y", "field": "lower_whisker_people"},
           "y2": {"scale": "y", "field": "lower_box_people"}
@@ -138,6 +145,9 @@
         "update": {
           "stroke": {"value": "black"},
           "tooltip": {"signal": "format(datum[\"mean_people\"], \"\")"},
+          "description": {
+            "signal": "\"people\" + \": \" + (format(datum[\"upper_box_people\"], \"\")) + \"; \" + \"upper_whisker_people\" + \": \" + (format(datum[\"upper_whisker_people\"], \"\")) + \"; \" + \"age\" + \": \" + (isValid(datum[\"age\"]) ? datum[\"age\"] : \"\"+datum[\"age\"]) + \"; \" + \"Mean of people\" + \": \" + (format(datum[\"mean_people\"], \"\"))"
+          },
           "x": {"scale": "x", "field": "age", "band": 0.5},
           "y": {"scale": "y", "field": "upper_box_people"},
           "y2": {"scale": "y", "field": "upper_whisker_people"}
@@ -153,6 +163,10 @@
         "update": {
           "fill": {"value": "#4c78a8"},
           "tooltip": {"signal": "format(datum[\"mean_people\"], \"\")"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"people\" + \": \" + (format(datum[\"lower_box_people\"], \"\")) + \"; \" + \"upper_box_people\" + \": \" + (format(datum[\"upper_box_people\"], \"\")) + \"; \" + \"age\" + \": \" + (isValid(datum[\"age\"]) ? datum[\"age\"] : \"\"+datum[\"age\"]) + \"; \" + \"Mean of people\" + \": \" + (format(datum[\"mean_people\"], \"\"))"
+          },
           "xc": {"scale": "x", "field": "age", "band": 0.5},
           "width": {"value": 14},
           "y": {"scale": "y", "field": "lower_box_people"},
@@ -170,6 +184,10 @@
           "opacity": {"value": 0.7},
           "fill": {"value": "white"},
           "tooltip": {"signal": "format(datum[\"mean_people\"], \"\")"},
+          "ariaRoleDescription": {"value": "tick"},
+          "description": {
+            "signal": "\"people\" + \": \" + (format(datum[\"mid_box_people\"], \"\")) + \"; \" + \"age\" + \": \" + (isValid(datum[\"age\"]) ? datum[\"age\"] : \"\"+datum[\"age\"]) + \"; \" + \"Mean of people\" + \": \" + (format(datum[\"mean_people\"], \"\"))"
+          },
           "xc": {"scale": "x", "field": "age", "band": 0.5},
           "yc": {"scale": "y", "field": "mid_box_people"},
           "width": {"value": 14},
@@ -223,6 +241,7 @@
       "tickCount": {"signal": "ceil(height/40)"},
       "domain": false,
       "labels": false,
+      "aria": false,
       "maxExtent": 0,
       "minExtent": 0,
       "ticks": false,
